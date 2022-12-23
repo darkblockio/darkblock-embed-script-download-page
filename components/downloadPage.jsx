@@ -41,7 +41,9 @@ const DownloadPage = () => {
 
       <div className="pb-6">
         <CodeSection theme="dark" lang="html">
-          {'src= "/folder-name/darkblockwidget-script"'}
+          {
+          `src= "/folder-name/darkblockwidget-script" // or\nsrc= "url_to_cdn" `
+          }
         </CodeSection>
       </div>
 
@@ -53,21 +55,15 @@ const DownloadPage = () => {
           Platform: <span className={styles.linecode}>Ethereum</span> |{" "}
           <span className={styles.linecode}>Matic (Polygon)</span> |{" "}
           <span className={styles.linecode}>Avax (Avalanche)</span> |{" "}
-          <span className={styles.linecode}>Tezos | Solana</span>
+          <span className={styles.linecode}>Tezos</span> | {" "}
+          <span className={styles.linecode}>Solana </span>
         </li>
         <li>Contract Address</li>
         <li>Token Id</li>
       </div>
-
       <br />
 
       <h2 className={styles.subTitle}>Download Darkblock Script using CDN</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum culpa
-        pariatur dolore voluptatibus odio natus sapiente accusantium quasi, ab
-        distinctio.
-      </p>
 
       <div className={styles.versionItem}>
         <h3 className={styles.smallTitle}>
